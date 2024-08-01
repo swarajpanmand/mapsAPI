@@ -35,7 +35,7 @@ const locations: Poi[] = [
 
 const App = () => (
   <APIProvider
-    apiKey={"AIzaSyDGvZ4BD3koIzvHvbJNi9Nweed42_U81K4"}
+    apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}
     onLoad={() => console.log("Maps API has loaded.")}
   >
     <Map
